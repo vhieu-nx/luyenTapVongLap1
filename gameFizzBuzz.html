@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FizzBuzz</title>
+</head>
+<body>
+<h1 id="result"></h1>
+<script>
+    let res = document.getElementById("result");
+    let fizzBuzz = '';
+    function PrintFizzBuzz() {
+        for (var i = 1; i <= 100; i ++) {
+            if ( i % 3 == 0 && i % 5 !== 0) {
+                fizzBuzz += 'Fizz ' + "<br/>"
+            } else if ( i % 5 == 0 && i % 3 !== 0) {
+                fizzBuzz += 'Buzz '+"<br/>"
+            } else if ( i % 5 == 0 && i % 3 == 0) {
+                fizzBuzz += 'FizzBuzz '+"<br/>"
+            } else {
+                fizzBuzz += i+ ' '
+            }
+        }
+        res.innerHTML = fizzBuzz;
+    }
+    PrintFizzBuzz();
+</script>
+</body>
+</html>

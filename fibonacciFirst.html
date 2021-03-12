@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị ra 20 số trong dãy fibonacci đầu tiên.</title>
+</head>
+<body>
+<h1 id="rs"></h1>
+    <script>
+        function fibonacci(n){
+            if(n < 0){
+                return 1;
+            }else {
+                return fibonacci(n-1) + fibonacci(n-2);
+            }
+        }
+
+        function show(){
+            let n = prompt("Enter fibonacci");
+
+            let arrfibonaci = null;
+            for (let i =1;i<=n;i++){
+                arrfibonaci += fibonacci(i);
+            }
+            let result = document.getElementById("rs");
+            result.innerHTML = arrfibonaci;
+
+        }
+        show();
+        window.
+    </script>
+</body>
+</html>

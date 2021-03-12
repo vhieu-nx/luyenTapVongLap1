@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người truy cập</title>
+</head>
+<body>
+
+<script>
+
+    do {
+        message = parseFloat(prompt("Enter current temperature information is entered by the visitor"));
+    }while (isNaN(message))
+    if (message < 20){
+        alert("Up doC");
+    }else if(message > 100){
+        alert("Down doC");
+    }else {
+        alert("Amazing good job E");
+    }
+</script>
+
+</body>
+</html>
