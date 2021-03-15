@@ -15,19 +15,16 @@
             }
         }
 
-        function show(){
-            let n = prompt("Enter fibonacci");
-
-            let arrfibonaci = null;
-            for (let i =1;i<=n;i++){
-                arrfibonaci += fibonacci(i);
+        function display() {
+            let n = prompt("Nhập số lượng số Finbonancci đầu tiên cần hiển thị :")
+            let res = document.getElementById("rs");
+            let arrayOfFibo = "";
+            for ( let i = 1; i<=n; i++) {
+                arrayOfFibo += `${fibonacci(i)} ;`;
             }
-            let result = document.getElementById("rs");
-            result.innerHTML = arrfibonaci;
-
+            res.innerHTML = arrayOfFibo;
         }
-        show();
-        window.
+        display();
     </script>
 </body>
 </html>
